@@ -9,4 +9,4 @@ accelerometer = adafruit_adxl34x.ADXL345(i2c)
 
 while True:
     print("%f %f %f"%accelerometer.acceleration)
-    time.sleep(2)
+    time.sleep(0.2)
