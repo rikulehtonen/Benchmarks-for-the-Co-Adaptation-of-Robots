@@ -11,6 +11,16 @@ accelerometer = adafruit_adxl34x.ADXL345(i2c)
 
 
 def get_accelerometer_readings():
-    x_acc, y_acc, z_acc = accelerometer.acceleration
-    return np.array([x_acc, y_acc, z_acc])
+    for _ in range(10):
+        try:
+            x_acc, y_acc, z_acc = accelerometer.acceleration
+            return [round(x_acc, 3), round(y_acc, 3), round(z_acc, 3)]
+        except Exception as e:
+            #print("Exception in accelerometer: {}".format(e))
+            pass
+    return [0, 0 ,0]
+
+
+if __name__ == "__main__":
+    print(get_accelerometer_readings())
 

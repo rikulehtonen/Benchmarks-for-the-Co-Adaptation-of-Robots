@@ -22,7 +22,7 @@ args = parser.parse_args()
 args = {
     'board': 'pmw3901',
     'rotation': 0,
-    'spi-slot': 'back'
+    'spi_slot': 'back'
 }
 
 # Pick the right class for the specified breakout
