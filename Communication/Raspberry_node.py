@@ -8,7 +8,7 @@ import traceback
 
 # Load the accelerometer and velocity module
 from i2c_accelerometer import get_accelerometer_readings
-#from pmw3901 import get_velocity_readings
+from i2c_velocity import get_velocity_readings
 
 
 addr = 0x10 # bus address
@@ -17,7 +17,8 @@ bus = SMBus(1)
 # Replace it with the IP of the host computer, use a hotspot etc to connect both device to same network
 # Not using UDP as of now
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client.connect(('10.100.26.70', 5050))
+#client.connect(('10.100.26.70', 5050))
+client.connect(('169.254.64.94', 5050))
 
 
 def send_instructions_to_teensy(motor_cmd):
@@ -57,10 +58,11 @@ def send():
         try:
             teensy_states = fetch_states_from_teensy()
             acc_vector = get_accelerometer_readings()
-            #vec_vector = get_velocity_readings()
+            vec_vector = get_velocity_readings()
 
             #teensy_states = np.concatenate((teensy_states, acc_vector, vec_vector))
             teensy_states.extend(acc_vector)
+            teensy_states.extend(vec_vector)
             print(teensy_states)
             #teensy_states = np.concatenate((teensy_states, acc_vector))
             teensy_states = pickle.dumps(teensy_states)
