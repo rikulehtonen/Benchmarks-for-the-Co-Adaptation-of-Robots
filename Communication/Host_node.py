@@ -8,7 +8,8 @@ import numpy as np
 
 
 # Replace it with the local IP of Host machine
-host = "10.100.26.70"
+# host = "10.100.26.70"
+host = "169.254.64.94"
 port = 5050
 
 
@@ -53,7 +54,7 @@ def send():
     while connected:
         try:
             with lock:
-                # global motor_cmd
+                global motor_cmd
                 # motor_cmd = [val-2 for val in motor_cmd]
                 motor_cmd_send = pickle.dumps(motor_cmd)
                 client.send(motor_cmd_send)

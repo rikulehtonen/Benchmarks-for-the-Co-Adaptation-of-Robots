@@ -106,11 +106,11 @@ void setup() {
   servo1.attach(2);              // consequent servos to be attache from 4-->
   servo2.attach(3);
   servo3.attach(4);              // consequent servos to be attache from 4-->
-  servo4.attach(5);
-  servo5.attach(6);              // consequent servos to be attache from 4-->
-  servo6.attach(7);
-  servo7.attach(8);              // consequent servos to be attache from 4-->
-  servo8.attach(9);
+  servo4.attach(6);
+  servo5.attach(7);              // consequent servos to be attache from 4-->
+  servo6.attach(8);
+  servo7.attach(10);              // consequent servos to be attache from 4-->
+  servo8.attach(11);
 
 }
 
