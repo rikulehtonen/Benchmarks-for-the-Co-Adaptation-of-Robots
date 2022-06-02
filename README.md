@@ -4,13 +4,17 @@ In this project, we created a physical benchmarking setup for the co-adaptation 
 
 Akira King - Riku Lehtonen - Tatu Saarikangas - Arundev Satheesan
 
+    .
+    ├── Communication         # Communication between different components of the co-adaptation hardware
+    ├── Robot                 # Robot CAD models and documentation
+    ├── Treadmill             # Treadmill CAD models, build guide and partslist
+    ├── LICENSE
+    ├── projectimage.png
+    └── README.md
+
 ![Project build](projectimage.png)
 
-.
-├── Communication                 # Communication between different components of the co-adaptation hardware
-├── Robot                         # Robot CAD models and documentation
-├── Treadmill                     # Treadmill CAD models, build guide and partslist
-├── LICENSE
-├── projectimage.png
-└── README.md
+![Project build](robot.gif)
 
+Check out the full video:
+[Creating Benchmarks for the CoAdaptation of Robots - VIDEO](https://wiki.aalto.fi/display/AEEproject/Creating+Benchmarks+for+the+Co-Adaptation+of+Robots?preview=/212893721/212901661/coadapt_short.mp4)
