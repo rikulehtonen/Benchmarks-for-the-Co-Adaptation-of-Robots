@@ -10,11 +10,12 @@ Akira King - Riku Lehtonen - Tatu Saarikangas - Arundev Satheesan
     ├── Treadmill             # Treadmill CAD models, build guide and partslist
     ├── LICENSE
     ├── projectimage.png
+    ├── projectvideo.gif
     └── README.md
 
 ![Project build](projectimage.png)
 
-![Project build](robot.gif)
+![Project build](projectvideo.gif)
 
 Check out the full video:
 [Creating Benchmarks for the CoAdaptation of Robots - VIDEO](https://wiki.aalto.fi/display/AEEproject/Creating+Benchmarks+for+the+Co-Adaptation+of+Robots?preview=/212893721/212901661/coadapt_short.mp4)
