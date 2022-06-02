@@ -1,0 +1,31 @@
+Solid Edge Translation to STEP
+Date: torstai,kesäkuu 02,2022 08:11ip.
+Output File: C:\Users\lgm-edit\OneDrive\Asiakirjat\Robot\benchmarks-for-the-co-adaptation-of-robots\Treadmill\design\Step models\roller.stp
+Author: Unknown
+Organization: Unknown
+Source System: Solid Edge
+
+Hardware:
+Processor: Intel(R) Core(TM) i9-9900K CPU @ 3.60GHz
+Operating System: Windows 10 Professional
+Installed Memory: 11.06 GB
+
+Software Information
+Parasolid Version: 34.0.153
+PSBodyShop Version: 34.0.110
+Step Adapter Version: 9.0.92
+Solid Edge Version: 222.00.02.003 x64
+
+STEP Export Options
+Export Format: AP214
+Export Construction Sheets: Off
+Export Construction Solids: Off
+Export Construction Wires: Off
+Export Displayed Parts Only: Off
+Export Units: Millimeters
+Export Part Component Names As Unicode: Off
+Export PMI: Off
+
+Phase 1 of 1 Translating Parasolid to foreign data types...
+Translation process completed
+Time required to translate:00 : 00 : 01
